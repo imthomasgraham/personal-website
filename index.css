@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Here is where I design my navigation bar.*/
+
+.navbar ul {
+  list-style: none;
+  background-color: gray;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: hsl(0, 0%, 10%);
+}
+
+.navbar li {
+  float: left;
+}
+
+/* About me design starts here */
+#pfp {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.section {
+  min-height: 100vh;
+  background-image: url(water.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+article {
+  text-align: center;
+}
+
+article h1 {
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+article h1::after {
+  content: "";
+  height: 3px;
+  width: 225px;
+  background-color: black;
+  display: block;
+  margin: auto;
+}
+
+.hero {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+content {
+  font-size: 17px;
+  color: white;
+  line-height: 5;
+}
+
+article h5 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: black;
+}
+
+article p {
+  font-size: 20px;
+  color: white;
+}
+
+article ul {
+  list-style: none;
+  font-size: 50px;
+}
+
+/* This where the design for the portfolio page starts.*/
+
+.gallery {
+  display: inline-block;
+  border: 1px solid hsl(0, 0%, 60%);
+  margin: 5px;
+  display: flex;
+}
+
+.gallery .desc {
+  padding: 10px;
+  text-align: center;
+}
+
+.gallery:hover {
+  border: 1px solid hsl(0, 0%, 20%);
+}
