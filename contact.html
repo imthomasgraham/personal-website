@@ -20,14 +20,84 @@
         <div class="hero">
           <article>
             <h1>Contacts</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              quasi dolorum vitae sit blanditiis fugit omnis fugiat molestiae
-              adipisci nisi officia ipsam, veniam aut ducimus ipsa ullam
-              necessitatibus repellendus at.
-            </p>
           </article>
         </div>
+        <center>
+          <form name="contact" action="send.php" method="post">
+            <table width="600" border="1" cellspacing="2" cellpadding="2">
+              <tr>
+                <td>Website Review</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fname" maxlength="50" /></td>
+              </tr>
+              <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname" maxlength="50" /></td>
+              </tr>
+              <tr>
+                <td>FSA Role:</td>
+                <td>
+                  <select name="fsarole">
+                    <option value="IN">Instructor</option>
+                    <option value="ST">Student</option>
+                    <option value="ME">Mentor</option>
+                    <option value="OU">Outsider</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Experience Level</td>
+                <td>
+                  <select name="experience">
+                    <option value="TR">Trainee</option>
+                    <option value="JU">Junior Developer</option>
+                    <option value="MI">Middle Developer</option>
+                    <option value="SE">Senior Developer</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Education</td>
+                <td>
+                  <input type="checkbox" name="hs" />Graduated High School
+                  <input type="checkbox" name="sc" />Some College
+                  <input type="checkbox" name="as" />Associate's Degree
+                  <input type="checkbox" name="ba" />Bachelor's Degree
+                  <input type="checkbox" name="ma" />Master's Degree or Higher
+                  <input type="checkbox" name="no" />None
+                </td>
+              </tr>
+              <tr>
+                <td>Employment Status</td>
+                <td>
+                  <input type="radio" name="estatus" value="employed" />Employed
+                  <input
+                    type="radio"
+                    name="estatus"
+                    value="undemployed"
+                  />Unemployed
+                  <input type="radio" name="estatus" value="student" />Student
+                </td>
+              </tr>
+              <tr>
+                <td>Website Review:</td>
+                <td>
+                  <textarea name="reviews" cols="45" rows="5"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="submit" name="submit" value="Submit" />
+                  <input type="reset" name="reset" value="Reset" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </center>
       </div>
     </main>
     <script src="javascript.js"></script>

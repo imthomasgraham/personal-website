@@ -121,3 +121,24 @@ article ul {
 .gallery:hover {
   border: 1px solid hsl(0, 0%, 20%);
 }
+
+/* Here is where my media queries start*/
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rebeccapurple;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: royalblue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    color: cyan;
+    text-decoration: line-through;
+  }
+}
